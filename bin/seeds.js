@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const User = require('../models/User.model');
 
-require('../configs/db.config');
+// ℹ️ Connects to the database
+require("../db");
 
 // User.collection.drop();
 
