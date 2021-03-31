@@ -1,20 +1,19 @@
-const express = require('express');
-const router = express.Router();
+const router = require("express").Router();
 
-const User = require('../models/User.model');
-const Post = require('../models/Post.model');
+const User = require("../models/User.model");
+const Post = require("../models/Post.model");
 
 // ****************************************************************************************
 // GET route to display the form to create a new post
 // ****************************************************************************************
 
 // localhost:3000/post-create
-router.get('/post-create', (req, res) => {
+router.get("/post-create", (req, res) => {
   User.find()
-    .then(dbUsers => {
-      res.render('posts/create', { dbUsers });
+    .then((dbUsers) => {
+      res.render("posts/create", { dbUsers });
     })
-    .catch(err => console.log(`Err while displaying post input page: ${err}`));
+    .catch((err) => console.log(`Err while displaying post input page: ${err}`));
 });
 
 // ****************************************************************************************
