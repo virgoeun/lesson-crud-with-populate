@@ -9,13 +9,21 @@
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "mongoose": "^5.12.2",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^5.13.20",
     "morgan": "^1.10.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+    "nodemon": "^2.0.22"
+  },
+  "main": "app.js",
+  "bin": {
+    "crud-with-populate": "bin/seeds.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
